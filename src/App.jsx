@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css"
 import weatherLogo from './assets/weather-logo.svg';
+import reactlogo from './assets/react.svg';
 function App() {
   const [search, setSearch] = useState("")
   const [weather, setWeather] = useState([])
@@ -85,6 +86,9 @@ function App() {
         ) : (
           <p className="text-red-600 font-medium">No data found</p>
         )}
+      </div>
+      <div className="flex justify-center mt-20">
+        <h2 className="text-center flex items-center gap-2">Created using <span className="bg-black p-1 rounded-full"><img src={reactlogo} alt="react logo" width={19} /></span>React</h2>
       </div>
     </div >
   )
