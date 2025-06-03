@@ -47,12 +47,12 @@ function App() {
 
   return (
     <div>
-      <div className="container mx-auto flex justify-between items-center mt-3">
+      <div className="container mx-auto flex justify-between items-center mt-5">
         <span className="container mx-auto flex items-center gap-2 font-bold text-2xl text-black">
           <img src={weatherLogo} alt="logo" width={50} />Weather</span>
         <span>{date}</span>
       </div>
-      <form className="container mx-auto my-5 text-1xl font-medium flex justify-center gap-3 rounded focus:outline-none
+      <form className="container mx-auto my-20 text-1xl font-medium flex justify-center gap-3 rounded focus:outline-none
  ">
         <input type="text" className="border rounded-full px-5 py-2 mt-6 text-black lg:w-100 md:w-80" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Enter the City Name" />
       </form>
@@ -87,7 +87,7 @@ function App() {
           <p className="text-red-600 font-medium">No data found</p>
         )}
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 mb-5">
         <h2 className="text-center flex items-center gap-2">Created using <span className="bg-black p-1 rounded-full"><img src={reactlogo} alt="react logo" width={19} /></span>React</h2>
       </div>
     </div >
