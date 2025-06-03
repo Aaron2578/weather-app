@@ -54,9 +54,9 @@ function App() {
       </div>
       <form className="container mx-auto my-5 text-1xl font-medium flex justify-center gap-3 rounded focus:outline-none
  ">
-        <input type="text" className="border rounded-full px-5 py-2 mt-6 text-black" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Enter the City Name" />
+        <input type="text" className="border rounded-full px-5 py-2 mt-6 text-black lg:w-100 md:w-80" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Enter the City Name" />
       </form>
-      <div className="flex justify-center items-center mt-5">
+      <div className="flex justify-center items-center mt-20">
         {search === "" ? (
           <p className="text-gray-600 font-medium">Enter a city to search</p>
         ) : loader ? (
@@ -87,7 +87,7 @@ function App() {
           <p className="text-red-600 font-medium">No data found</p>
         )}
       </div>
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-10">
         <h2 className="text-center flex items-center gap-2">Created using <span className="bg-black p-1 rounded-full"><img src={reactlogo} alt="react logo" width={19} /></span>React</h2>
       </div>
     </div >
