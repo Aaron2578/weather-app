@@ -42,7 +42,7 @@ function App() {
 
   const kelvinToC = k => (k - 273.15).toFixed(1);
   const temperature = kelvinToC(weather?.main?.temp);
-  const speed = 0.74 * 3.6;
+  const speed = weather?.wind?.speed * 3.6;
   const date = new Date().toDateString();
 
   return (
@@ -88,7 +88,7 @@ function App() {
         )}
       </div>
       <div className="flex justify-center mt-10 mb-5">
-        <h2 className="text-center flex items-center gap-2">Created using <span className="bg-black p-1 rounded-full"><img src={reactlogo} alt="react logo" width={19} /></span>React</h2>
+        <h2 className="text-center flex items-center gap-2">Created using <span className="bg-black p-1 rounded-full"><img src={reactlogo} alt="react logo" width={20} /></span>React</h2>
       </div>
     </div >
   )
